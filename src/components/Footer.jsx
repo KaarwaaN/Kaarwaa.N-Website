@@ -12,15 +12,14 @@ function Footer() {
             <span className="text-blue-500 font-bold" style={{ fontFamily: 'Poppins' }}>Kaarwaan</span>
           </div>
           <p className="text-sm font-light pb-4">
-            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam bibendum ante, vel rhoncus dolor volutpat at. Sed elementum arcu id urna euismod, in fermentum libero cursus.
           </p>
           <div className="mt-12">
             <div className="flex space-x-4">
-              <a href="#" className="text-2xl"><FaFacebook /></a>
-              <a href="#" className="text-2xl"><FaTwitter /></a>
-              <a href="#" className="text-2xl"><FaYoutube /></a>
-              <a href="#" className="text-2xl"><FaLinkedin /></a>
-              <a href="#" className="text-2xl"><FaInstagram /></a>
+              <a href="https://www.facebook.com/kaarwaanjec/" className="text-2xl" target='_blank' rel='noreferrer'><FaFacebook /></a>
+              <a href="https://www.youtube.com/@kaarwaanjec9417" className="text-2xl" target='_blank' rel='noreferrer'><FaYoutube /></a>
+              <a href="https://www.linkedin.com/company/kaarwaa-n/" className="text-2xl" target='_blank' rel='noreferrer'><FaLinkedin /></a>
+              <a href="https://www.instagram.com/kaarwaa.n/" className="text-2xl" target='_blank' rel='noreferrer'><FaInstagram /></a>
             </div>
           </div>
         </div>
