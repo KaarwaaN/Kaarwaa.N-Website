@@ -73,9 +73,34 @@ function Homepage() {
           <img className="-translate-y-16" src="https://imgs.search.brave.com/ja4k5TM1dYkUiwKpscJHz1Iu259-i1hmDGKRq327ydo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/YXBtY2RuLm9yZy85/ZDRkMDc2ZTgyZDg3/ZjEwOWM5NDU0MDQ3/OTZlNDlkYjE0MDc4/OGIyL3dpZGVzY3Jl/ZW4vYTZjNmMyLTIw/MjIwOTA3LW5vcnRo/aWdoc2Nob29sZm9v/dGJhbGwzMDMtNjAw/LmpwZw" alt="" />
         </div>
       </div>
+          <div className="flex flex-col items-center h-96 text-white w-full px-32 py-12 bg-[#24387a] programbg">
+            <h1 className="text-4xl">Program To Empower Others</h1>
+            <p className="text-center w-2/3 text-sm mt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsa! Possimus, tempora! Expedita dicta quasi quidem accusantium temporibus repudiandae voluptate odio, distinctio nesciunt, quam eum, provident mollitia corrupti quisquam praesentium!</p>
+            <div className="w-2/3 my-10 gap-4 flex justify-center ">
+              <div className="w-full h-24  flex flex-col justify-center items-center sideborder">
+                <h1 className="text-4xl">24</h1>
+                <p className="text-sm">Aryan Tyagi</p>
+              </div>
+              
+              <div className="w-full h-24  flex flex-col justify-center items-center sideborder">
+                <h1 className="text-4xl">24</h1>
+                <p className="text-sm">Aryan Tyagi</p>
+              </div>
+              
+              <div className="w-full h-24  flex flex-col justify-center items-center sideborder">
+                <h1 className="text-4xl">24</h1>
+                <p className="text-sm">Aryan Tyagi</p>
+              </div>
+              
+              <div className="w-full h-24  flex flex-col justify-center items-center">
+                <h1 className="text-4xl">24</h1>
+                <p className="text-sm">Aryan Tyagi</p>
+              </div>
+              
+            </div>
+          </div>
+    
 
-    
-    
 
     
       <div>

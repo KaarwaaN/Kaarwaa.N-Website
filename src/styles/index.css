@@ -18,6 +18,18 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.programbg{
+    background-color: #24387a;
+    /* background-image: url(https://imgs.search.brave.com/v5oJc4ZJrb6I4eq15gzv-T4XNMKwdNIXaaLG83y0_ZQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/ODg1MjE3ODc5OTEt/ZWQ3YmJhYWU3NzNj/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/amIyeHNaV04wYVc5/dUxYQmhaMlY4TVRk/OE1URXhOalV6Tkh4/OFpXNThNSHg4Zkh4/OCZ3PTEwMDAmcT04/MA);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.sideborder{
+    border-right: 2px solid grey;
+}
 .navbar{
     border-bottom: 1px solid grey;
 }
