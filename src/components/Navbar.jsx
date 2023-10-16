@@ -12,7 +12,7 @@ function Navbar() {
         </ul>
         <div className="flex gap-2 items-center">
           <img className="h-12" src="./images/karwaanlogo.png" alt="" />
-          <h1 className="text-2xl text-[#24387a] font-semibold">KAARWAAN</h1>
+          <h1 className="text-2xl text-[#24387a] font-semibold">Kaarwaa.N</h1>
         </div>
         <div className="flex flex-row justify-center items-center gap-2">
     <input type="search" placeholder="search here.." className=" py-1 p-4 w-64 border-slate-200 border-2 rounded-full" />
