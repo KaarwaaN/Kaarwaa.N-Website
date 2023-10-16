@@ -110,7 +110,10 @@ function Homepage() {
         </div>
       </div>
 
+        <h1 className="text-4xl font-semibold my-12 mt-32 text-center text-[#24387a]">Introduce Your Featured <br />
+Now Profit Causes</h1>
       <div className="w-full my-12 justify-center px-32 flex gap-12 h-full">
+
         <div className="card overflow-hidden">
           <img
           className="images"
