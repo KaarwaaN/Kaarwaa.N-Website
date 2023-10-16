@@ -34,23 +34,46 @@
     border-bottom: 1px solid grey;
 }
 .card{
-    height: auto;
+    height: 400px;
     width: 25%;
     /* border: 1px solid black; */
     margin: 0px 20px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px black;
 }
-.card:hover{
-    box-shadow: 0px 5px 15px black;
-    transition-duration: 0.3s;
-    transform: translateY(-10px);
+.detailstoshow{
+    border-radius: 15px 15px 0px 0px;
 }
-.card:not(:hover){
-    /* box-shadow: 0px 5px 15px black; */
-    transition-duration: 0.3s;
-    transform: translateY(10px);
+.card:hover .detailstoshow{
+    transform: translateY(-150px);
+    transition-duration: 0.5s;
+    opacity: 1;
+
 }
+
+/* to check */
+
+/* .card:hover .images{
+    filter: blur(1px);
+    transform: scale(1.02);
+    transition-duration: 0.6s;
+
+}
+.card:not(:hover) .images{
+    filter: blur(0px);
+    transform: scale(1);
+    transition-duration: 0.6s;
+
+} */
+
+
+
+.card:not(:hover) .detailstoshow{
+    transform: translateY(0px);
+    transition-duration: 0.5s;
+
+}
+
 
 /* source code */
 
