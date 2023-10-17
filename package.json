@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "nuka-carousel": "^6.0.3",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.482",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
