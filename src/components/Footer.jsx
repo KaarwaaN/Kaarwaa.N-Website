@@ -8,7 +8,7 @@ function Footer() {
       <div className="container mx-auto flex items-start justify-between gap-8  border-b border-gray-400">
         <div className="w-full md:w-1/4">
           <div className="text-2xl font-bold mb-4 flex items-center">
-            <img className="h-10 w-10 mr-2" src="./karwaanlogo.jpg" alt="Karwaan Logo" />
+            <img className="h-10 w-10 mr-2" src="./images/karwaanlogo.jpg" alt="Karwaan Logo" />
             <span className="text-blue-500 font-bold" style={{ fontFamily: 'Poppins' }}>Kaarwaan</span>
           </div>
           <p className="text-sm font-light pb-4">
