@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { BsArrowUpRight } from "react-icons/bs";
+import  Testimonials  from "../components/Testimonials";
 function Homepage() {
   return (
     <>
@@ -104,6 +105,7 @@ function Homepage() {
 
     
       <div>
+       <Testimonials/>
         <Footer />
       </div>
     </>
