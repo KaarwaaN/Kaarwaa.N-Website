@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import mentor_1 from "../assets/mentors/mentor_1.jpg";
 import mentor_2 from "../assets/mentors/mentor_2.jpg";
@@ -83,13 +83,13 @@ const Testimonials = () => {
           <img
             src={testimonials[previousImage].image}
             alt={testimonials[previousImage].name}
-            className="w-12 h-12 object-cover rounded-full mr-36 sm:mr-6 translate-y-7"
+            className="w-20 h-20 object-cover rounded-full mr-36 sm:mr-6 translate-y-7"
           />
           <div className="relative flex flex-col items-center my-4">
             <img
               src={testimonials[selectedTestimonial].image}
               alt={testimonials[selectedTestimonial].name}
-              className="w-32 h-32 object-cover rounded-full mx-auto"
+              className="w-44 h-44 object-cover rounded-full mx-auto"
             />
             <div className="text-center mt-4">
               <p className="text-gray-800 text-xl font-semibold">
@@ -101,7 +101,7 @@ const Testimonials = () => {
           <img
             src={testimonials[nextImage].image}
             alt={testimonials[nextImage].name}
-            className="w-12 h-12 object-cover rounded-full ml-36 sm:ml-6 -translate-y-14"
+            className="w-20 trans h-20 object-cover rounded-full ml-36 sm:ml-6 translate-y-6"
           />
           <button onClick={handleNext} className="carousel-control right-0 hidden sm:block">
             <FaChevronRight size={32} />

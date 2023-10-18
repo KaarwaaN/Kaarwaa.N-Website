@@ -15,7 +15,7 @@ function Navbar() {
           <h1 className="text-2xl text-[#24387a] font-semibold">Kaarwaa.N</h1>
         </div>
         <div className="flex flex-row justify-center items-center gap-2">
-    <input type="search" placeholder="search here.." className=" py-1 p-4 w-64 border-slate-200 border-2 rounded-full" />
+    <input type="search" placeholder="search here.." className="opacity-0 cursor-default py-1 p-4 w-64 border-slate-200 border-2 rounded-full" />
         <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 rounded-full border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">Donate Now <BsArrowUpRight/></button>
         </div>
     </div>
