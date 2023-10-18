@@ -8,6 +8,12 @@ function DonationSection() {
   const [showClothDonationForm, setShowClothDonationForm] = useState(false);
   const [showEducationalKitDonationForm, setShowEducationalKitDonationForm] = useState(false);
   const [showFinancialHelpForm, setShowFinancialHelpForm] = useState(false);
+ 
+  function closeForm(){
+    setShowClothDonationForm(false);
+    setShowEducationalKitDonationForm(false);
+    setShowFinancialHelpForm(false);
+  }
 
   return (
     <section className="bg-indigo-100 p-6">
@@ -40,17 +46,20 @@ function DonationSection() {
       </div>
       {showClothDonationForm && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50">
-          <ClothDonationForm />
+          <ClothDonationForm closeForm={closeForm} />
         </div>
       )}
       {showEducationalKitDonationForm && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50">
-          <EducationalKitDonationForm />
+          <EducationalKitDonationForm closeForm={closeForm} />
         </div>
       )}
       {showFinancialHelpForm && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50">
-          <FinancialHelpForm />
+  
+       
+       
+          <FinancialHelpForm closeForm={closeForm} />
         </div>
       )}
     </section>

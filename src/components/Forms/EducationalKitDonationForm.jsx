@@ -1,24 +1,55 @@
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
+import supabase from '../../supabase';
 
-function EducationalKitDonationForm() {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+function EducationalKitDonationForm({closeForm}) {
+  const { register,reset, handleSubmit, formState: { errors } } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data)
-    // Handle form submission here, including sending data to your server
+  const onSubmit = async (data) => {
+    try {
+      const { data: response, error } = await supabase
+        .from('EducationalForm')
+        .insert([
+          {
+            Name: data.name,
+            contact: data.contactNo,
+            email: data.email,
+            Type: data.studyMaterial,
+           
+          }
+        ])
+        .single();
 
-    // Example of how to display a success message
-    toast.success('Donation submitted successfully');
+      if (error) {
+        console.error('Error submitting donation:', error);
+        
+        toast.error('Error submitting donation');
+      } else {
+        console.log('Donation submitted successfully', response);
+        reset();
+        toast.success('Donation submitted successfully');
 
-    // Reset the form if needed
-    // reset();
-  };
+        
+     
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      // Handle error, e.g., display an error message
+      toast.error('An error occurred while submitting the form');
+    }
+  }
 
   return (
+    <div className="max-w-md mx-auto p-4 bg-white shadow-md rounded-lg">
+    <div className="mb-4">
+      <button className="float-right hover:scale-150  text-red-600 hover:text-red-800" onClick={(closeForm)}>✕</button>
+    </div>
+    <h2 className="text-2xl font-semibold text-center mb-4">Educational Kit Donation</h2>
+    
+   
+    <p className="text-gray-600 text-center mb-4">Donate Saraswati to needy kids and build a future</p>
     <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto p-4 bg-white shadow-md rounded-lg">
-      <h2 className="text-2xl font-semibold text-center mb-4">Educational Kit Donation</h2>
-      <p className="text-gray-600 text-center mb-4">Donate Saraswati to needy kids and build a future</p>
+
       <div className="mb-4">
         <label className="block text-gray-600 text-sm font-semibold mb-2">Name *</label>
         <input
@@ -56,6 +87,14 @@ function EducationalKitDonationForm() {
       </div>
       <button type="submit" className="w-full bg-indigo-500 text-white font-semibold py-2 rounded-md hover:bg-indigo-600">Donate</button>
     </form>
+      <p className="text-gray-600 mt-4 text-xs">
+        For any queries, feel free to contact us:<br />
+        Amar Singh Garg - 7987253381<br />
+        Akshat Rahangdale - 6266958866<br />
+        Aditya Pati Tripathi - 9580595332
+      </p>
+    </div>
+
   );
 }
 
