@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import mentor_1 from "../assets/mentors/mentor_1.jpg";
 import mentor_2 from "../assets/mentors/mentor_2.jpg";

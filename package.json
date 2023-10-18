@@ -12,8 +12,12 @@
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.482",
+    "@supabase/supabase-js": "^2.38.1",
+    "@tanstack/react-form": "^0.3.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.47.0",
+    "react-hot-toast": "^2.4.1",
     "react-icons": "^4.11.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.16.0"

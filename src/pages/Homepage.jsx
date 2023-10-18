@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import { BsArrowUpRight } from "react-icons/bs";
 import Tshirt from "../components/Tshirt";
 import Testimonials from "../components/Testimonials";
+import CreateDonationForm from "../components/Forms/FinancialHelpForm";
+import DonationSection from "../components/Donations";
 
 function Homepage() {
   return (
@@ -183,6 +185,7 @@ Now Profit Causes</h1>
 
 
       <div>
+      <DonationSection/>
        <Testimonials/>
         <Footer />
       </div>
