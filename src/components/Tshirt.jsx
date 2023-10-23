@@ -5,7 +5,7 @@ const Tshirt = () => {
     <h1 className='text-5xl translate-y-24 font-semibold text-center'>Get Your Karwaa.N Tshirt</h1>
     <div className='flex w-full gap-32 justify-center flex-row items-center'>
       <div className=' h-full'>
-      <Spline className='' scene="https://prod.spline.design/x7EwRLRyCPYo6Bhg/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/x7EwRLRyCPYo6Bhg/scene.splinecode" />
     </div>
     <div className='z-20'>
         <div className='w-1/2 h-full'>

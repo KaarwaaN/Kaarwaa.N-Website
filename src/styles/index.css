@@ -7,6 +7,18 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.kaarwaanbg{
+background-clip: text;
+-webkit-background-clip:text;
+color: transparent;
+background-image: linear-gradient(to left, #1e9600, #fff200, #ff0000);;
+
+}
+/* .imagebig:hover{
+  height: 500px;
+  width: 700px;
+  transition-duration: 0.3s;
+} */
 .sideimg{
     position: absolute;
     top: 26%;
@@ -176,7 +188,94 @@
     background-color: #fff;
     border-color: #fff;
   }
-  
+  .navbar2{
+    display: none;
+  }
+  .navbarin{
+    display: flex;
+  }
+
+
+  @media (max-width:1080px) {
+    .navbarin{
+        display: none;
+    }
+    .navbar2{
+      display: flex;
+    }
+    .home{
+      display: flex;
+      flex-direction: column-reverse;
+      background-image: none;
+      gap: 10px;
+      padding: 0px;
+    }
+    .taglinediv{
+      padding: 0px;
+    }
+    .sideimg{
+      position: inherit;
+      height: 300px;
+      width: 100%;
+      border: none;
+      border-radius: 0%;
+    }
+    .tagline{
+      font-size: 30px;
+      padding: 0px 20px;
+
+      width: 100%;
+    }
+    .homepara{
+      font-size: 15px;
+      padding:0px 20px;
+      width: 100%;
+      margin: 10px 0px;
+    }
+    .aboutdiv{
+      flex-direction: column;
+      width: 100%;
+    }
+    .detailsdiv{
+      
+      width: 100%;
+    }
+    .abouthread{
+      padding: 10px 5px;
+      width: 100%;
+    }
+    .aboutdetails{
+      padding: 0px 10px;
+    }
+    .imagebgdiv{
+      display: none;
+    }
+    .aboutimage{
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+      height: auto;
+    }
+    .image{
+      transform: translate(0px);
+    }
+    .programbg{
+      padding: 0px;
+    }
+    .programdata{
+      width: 100%;
+      padding: 0px 10px;
+    }
+    .cards{
+      padding: 0px;
+      justify-content: center;
+      align-items: center;
+    }
+    .card{
+      height: 420px;
+      width: 300px;
+    }
+  }
   
   
   
