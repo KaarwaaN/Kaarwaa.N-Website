@@ -1,10 +1,10 @@
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { BsArrowUpRight } from "react-icons/bs";
-// import Tshirt from "../components/Tshirt";
-// import Testimonials from "../components/Testimonials";
+import Tshirt from "../components/Tshirt";
+import Testimonials from "../components/Testimonials";
 // import CreateDonationForm from "../components/Forms/FinancialHelpForm";
-// import DonationSection from "../components/Donations";
+import DonationSection from "../components/Donations";
 
 function Homepage() {
   return (
@@ -140,7 +140,7 @@ A step for the welfare of another India.
             Blood Donation:  
             </h1>
             <p className="px-4 pb-2">
-            “A single drop of blood can make a huge difference.”  Every day thousands of lives are saved when someone donates blood. Contributing to this noble cause, Kaarwaa.N organizes blood donation camps.
+            “A single drop of blood can make a huge difference.”  Every day thousands of lives are saved when someone donates blood. 
             </p>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               Read More
@@ -158,7 +158,7 @@ A step for the welfare of another India.
             Plantation: 
             </h1>
             <p className="px-4 pb-2">
-            “He who plants a tree, plants a hope.” Deforestation is a severe threat to the environment. In order to curb the consequences of deforestation, Kaarwaa.N conducts plantation drives wherein saplings are planted in different institutions. It is conducted in association with municipal corporation.
+             In order to curb the consequences of deforestation, Kaarwaa.N conducts plantation drives wherein saplings are planted in different institutions.
             </p>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               Read More
@@ -176,7 +176,7 @@ A step for the welfare of another India.
             Clothes distribution: 
             </h1>
             <p className="px-4 pb-2">
-            Clothes distribution: Kaarwaa.N frequently donates clothes to the less fortunate ones. The clothes are received from households and then distributed to the needy by volunteers.
+           Kaarwaa.N frequently donates clothes to the less fortunate ones. The clothes are received from households and then distributed to the needy by volunteers.
             </p>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               Read More
@@ -194,7 +194,7 @@ A step for the welfare of another India.
             Orphanage visits: 
             </h1>
             <p className="px-4 pb-2">
-            Orphanage visits: The members of Kaarwaa.N occasionally visit the orphanage to spend time with the misfortunate ones/those robbed of parental love and guidance. We organize various fun activities to engage the children and refresh them. We try to fill their lives with a little love and care and encourage these young souls to strive in their lives. 
+           The members of Kaarwaa.N occasionally visit the orphanage to spend time with the misfortunate ones/those robbed of parental love and guidance.
             </p>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               Read More
@@ -209,10 +209,10 @@ A step for the welfare of another India.
           />
           <div className="detailstoshow bg-white">
             <h1 className="text-xl p-4 font-semibold text-[#24387a]">
-            Preparing students for entrance exam:
+            Exam Prepration:
             </h1>
             <p className="px-4 pb-2">
-            Kaarwaa.N aims to shine light in the dark corners of the underprivileged by educating them for these life changing exams. Over the years members of Kaarwaa.N have volunteered to tutor the students from nearby schools nurturing their minds and shaping their future.
+            Kaarwaa.N aims to shine light in the dark corners of the underprivileged by educating them for these life changing exams. 
             </p>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               Read More
@@ -221,15 +221,15 @@ A step for the welfare of another India.
         </div>
       </div>
 
-      {/* <div className="">
+      <div>
         <Tshirt />
-      </div> */}
+      </div>
 
-      {/* <div>
+      <div>
       <DonationSection/>
        <Testimonials/>
         <Footer />
-      </div> */}
+      </div>
     </>
   );
 }
