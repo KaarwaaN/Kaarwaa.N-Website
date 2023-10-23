@@ -14,11 +14,6 @@ color: transparent;
 background-image: linear-gradient(to left, #1e9600, #fff200, #ff0000);;
 
 }
-/* .imagebig:hover{
-  height: 500px;
-  width: 700px;
-  transition-duration: 0.3s;
-} */
 .sideimg{
     position: absolute;
     top: 26%;
