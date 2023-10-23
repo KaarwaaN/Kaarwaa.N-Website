@@ -14,6 +14,7 @@
     "@splinetool/runtime": "^0.9.482",
     "@supabase/supabase-js": "^2.38.1",
     "@tanstack/react-form": "^0.3.6",
+    "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.47.0",

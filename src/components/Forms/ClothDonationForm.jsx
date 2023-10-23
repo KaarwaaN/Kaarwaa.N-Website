@@ -65,7 +65,11 @@ function ClothDonationForm({closeForm}) {
         <label className="block text-gray-600 text-sm font-semibold mb-2">Mobile Number *</label>
         <input
           type="text"
-          {...register('mobileNumber', { required: 'This field is required' })}
+          {...register('mobileNumber', { required: 'This field is required',
+          pattern: {
+                value: /^\d{10}$/,
+                message: 'Enter a valid 10-digit phone number',
+              }, })}
           className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
         />
         {errors.mobileNumber && <p className="text-red-500 text-sm mt-1">{errors.mobileNumber.message}</p>}

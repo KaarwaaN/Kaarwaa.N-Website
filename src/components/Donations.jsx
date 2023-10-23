@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { IoShirt, IoBook, IoWallet } from 'react-icons/io5';
+import { motion, AnimatePresence } from 'framer-motion'; // Import motion
 import ClothDonationForm from './Forms/ClothDonationForm'; // Import your donation forms
 import EducationalKitDonationForm from './Forms/EducationalKitDonationForm';
 import FinancialHelpForm from './Forms/FinancialHelpForm';
@@ -8,8 +9,8 @@ function DonationSection() {
   const [showClothDonationForm, setShowClothDonationForm] = useState(false);
   const [showEducationalKitDonationForm, setShowEducationalKitDonationForm] = useState(false);
   const [showFinancialHelpForm, setShowFinancialHelpForm] = useState(false);
- 
-  function closeForm(){
+
+  function closeForm() {
     setShowClothDonationForm(false);
     setShowEducationalKitDonationForm(false);
     setShowFinancialHelpForm(false);
@@ -37,31 +38,48 @@ function DonationSection() {
           Educational Donation
         </button>
         <button
-          className="bg-indigo-500 text-white flex items-center justify-center px-4 py-2 rounded-md hover:bg-indigo-600"
+          className="bg-indigo-500 text-white flex items-center justify-center px-4 py-2 rounded-md hover-bg-indigo-600"
           onClick={() => setShowFinancialHelpForm(true)}
         >
           <IoWallet className="text-xl mr-2" />
           Help Financially
         </button>
       </div>
-      {showClothDonationForm && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50">
-          <ClothDonationForm closeForm={closeForm} />
-        </div>
-      )}
-      {showEducationalKitDonationForm && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50">
-          <EducationalKitDonationForm closeForm={closeForm} />
-        </div>
-      )}
-      {showFinancialHelpForm && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50">
-  
-       
-       
-          <FinancialHelpForm closeForm={closeForm} />
-        </div>
-      )}
+      <AnimatePresence initial={false}>
+        {showClothDonationForm && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50"
+          >
+            <ClothDonationForm closeForm={closeForm} />
+          </motion.div>
+        )}
+        {showEducationalKitDonationForm && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50"
+          >
+            <EducationalKitDonationForm closeForm={closeForm} />
+          </motion.div>
+        )}
+        {showFinancialHelpForm && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50"
+          >
+            <FinancialHelpForm closeForm={closeForm} />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

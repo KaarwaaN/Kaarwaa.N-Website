@@ -1,8 +1,14 @@
-
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import CertificateForm from './Forms/CertificateForm';
 
 function Footer() {
+  const [showCertificateForm, setShowCertificateForm] = useState(false);
+  function onClose(){
+    setShowCertificateForm(false);
+  }
   return (
     <footer className="bg-gray-200 py-8 px-32 ">
       <div className="container mx-auto flex items-start justify-between gap-8  border-b border-gray-400">
@@ -40,7 +46,21 @@ function Footer() {
             <li><Link to="#" className="hover:text-blue-400">FAQ</Link></li>
             <li><Link to="#" className="hover:text-blue-400">Privacy Policy</Link></li>
             <li><Link to="#" className="hover:text-blue-400">Feedback</Link></li>
-            <li><Link to="#" className="hover:text-blue-400">Certificate Verification</Link></li>
+            <li> 
+                 <button onClick={()=>setShowCertificateForm(true)} className="hover:text-blue-400">Certificate Validation</button>
+                            {showCertificateForm && 
+                              <motion.div
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                                className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50"
+                              >
+                            <CertificateForm closeForm={onClose}/>
+                            </motion.div>                            
+                            }
+           </li>
+
           </ul>
         </div>
 
