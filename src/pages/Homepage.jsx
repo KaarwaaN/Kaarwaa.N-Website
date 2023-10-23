@@ -1,10 +1,10 @@
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { BsArrowUpRight } from "react-icons/bs";
-import Tshirt from "../components/Tshirt";
-import Testimonials from "../components/Testimonials";
+// import Tshirt from "../components/Tshirt";
+// import Testimonials from "../components/Testimonials";
 // import CreateDonationForm from "../components/Forms/FinancialHelpForm";
-import DonationSection from "../components/Donations";
+// import DonationSection from "../components/Donations";
 
 function Homepage() {
   return (
@@ -15,18 +15,18 @@ function Homepage() {
 
       {/* home page  */}
       <div className="px-12 gap-44 items-center flex justify-center h-screen w-full bg-[url('./images/homebg.png')] home">
-        <div className="pl-20">
-          <h1 className="text-6xl w-3/5 pr-20 text-[#24387a] font-semibold">
+        <div className="pl-20 taglinediv">
+          <h1 className="text-6xl tagline w-3/5 pr-20 text-[#24387a] font-semibold">
          <span className="kaarwaanbg"> Kaarwaa.N...</span><br />
 A step for the welfare of another India.
           </h1>
-          <p className="w-1/2 mt-8 my-2">
+          <p className="w-1/2 homepara mt-8 my-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
             officiis minus soluta, ex inventore earum eius repellat? Quibusdam
             facilis, accusantium ut iste esse adipisci pariatur libero velit
             nostrum. Quis, maiores.
           </p>
-          <div className="h-auto flex gap-6 py-6 w-96 ">
+          <div className="h-auto flex justify-center gap-6 py-6 w-96 ">
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-white px-4 py-1 rounded-full bg-[#24387a] hover:bg-white hover:text-[#24387a] duration-300 hover:border-2 hover:border-[#24387a]">
               Donate Now <BsArrowUpRight />
             </button>
@@ -45,15 +45,15 @@ A step for the welfare of another India.
       </div>
 
       {/* about us page */}
-      <div className="flex  my-20 flex-row">
-        <div className="flex flex-col w-1/2">
-          <div className="w-full py-4 p-12 pl-32 h-full flex items-start text-white flex-col bg-[#24387a]">
+      <div className="flex aboutdiv my-20 flex-row">
+        <div className="flex detailsdiv flex-col w-1/2">
+          <div className="w-full py-4 p-12 pl-32 h-full flex items-start abouthread text-white flex-col bg-[#24387a]">
             <h1 className="py-3">About Us</h1>
             <h1 className="text-4xl font-semibold">
              A glimpse at Kaarwaa.N
             </h1>
           </div>
-          <div className="w-full py-4 p-12 pl-32 h-full">
+          <div className="w-full aboutdetails py-4 p-12 pl-32 h-full">
             <p>
             Kaarwaa.N is a social welfare association founded by the students of Jabalpur Engineering College (JEC), Jabalpur. We are dedicated to help poor, underprivileged, downtrodden sections of the society. The primary aim of Kaarwaa.N is to tutor students for the JNV (Jawahar Navodaya Vidhyalaya) Entrance Exam and encourage “girls’ education”.
             </p>
@@ -66,16 +66,16 @@ A step for the welfare of another India.
             </button>
           </div>
         </div>
-        <div className="aboutimage bg- h-96 w-1/2">
-          <div className="h-40 w-full bg-[#24387a]"></div>
+        <div className="aboutimage h-96 w-1/2">
+          <div className="h-40 w-full imagebgdiv bg-[#24387a]"></div>
           <img
-            className="-translate-y-16 -translate-x-8"
+            className="-translate-y-16 image -translate-x-8"
             src="./images/aboutusimage.jpg"
             alt=""
           />
         </div>
       </div>
-      <div className="flex flex-col items-center h-96 text-white w-full px-32 py-12 bg-[#24387a] programbg">
+      {/* <div className="flex flex-col items-center h-96 text-white w-full px-32 py-12 bg-[#24387a] programbg">
         <h1 className="text-4xl">Program To Empower Others</h1>
         <p className="text-center w-2/3 text-sm mt-6">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsa!
@@ -104,13 +104,13 @@ A step for the welfare of another India.
             <p className="text-sm">Aryan Tyagi</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <h1 className="text-4xl font-semibold my-12 mt-32 text-center text-[#24387a]">
         Introduce Your Featured <br />
         Now Profit Causes
       </h1>
-      <div className="w-full flex-wrap  my-12 justify-center px-32 flex gap-12 h-full">
+      <div className="w-full flex-wrap cards my-12 justify-center px-32 flex gap-12 h-full">
         <div className="card overflow-hidden">
           <img
             className="images"
@@ -227,15 +227,15 @@ A step for the welfare of another India.
         </div>
       </div>
 
-      <div className="">
+      {/* <div className="">
         <Tshirt />
-      </div>
+      </div> */}
 
-      <div>
+      {/* <div>
       <DonationSection/>
        <Testimonials/>
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 }
