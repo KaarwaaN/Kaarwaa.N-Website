@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { BsArrowUpRight } from "react-icons/bs";
 import Tshirt from "../components/Tshirt";
 import Testimonials from "../components/Testimonials";
-import CreateDonationForm from "../components/Forms/FinancialHelpForm";
+// import CreateDonationForm from "../components/Forms/FinancialHelpForm";
 import DonationSection from "../components/Donations";
 
 function Homepage() {
@@ -17,9 +17,8 @@ function Homepage() {
       <div className="px-12 gap-44 items-center flex justify-center h-screen w-full bg-[url('./images/homebg.png')] home">
         <div className="pl-20">
           <h1 className="text-6xl w-3/5 pr-20 text-[#24387a] font-semibold">
-            Your Help Matters,
-            <br />
-            No Matter How Big Or Small.
+         <span className="kaarwaanbg"> Kaarwaa.N...</span><br />
+A step for the welfare of another India.
           </h1>
           <p className="w-1/2 mt-8 my-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
@@ -46,27 +45,20 @@ function Homepage() {
       </div>
 
       {/* about us page */}
-      <div className="flex my-20 flex-row">
+      <div className="flex  my-20 flex-row">
         <div className="flex flex-col w-1/2">
           <div className="w-full py-4 p-12 pl-32 h-full flex items-start text-white flex-col bg-[#24387a]">
             <h1 className="py-3">About Us</h1>
             <h1 className="text-4xl font-semibold">
-              Helping People In <br />
-              Need Around The World
+             A glimpse at Kaarwaa.N
             </h1>
           </div>
           <div className="w-full py-4 p-12 pl-32 h-full">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              sit quia doloremque, quisquam harum consequatur debitis expedita
-              dolorum maxime temporibus pariatur ratione velit quibusdam ullam
-              fuga hic deleniti at error.
+            Kaarwaa.N is a social welfare association founded by the students of Jabalpur Engineering College (JEC), Jabalpur. We are dedicated to help poor, underprivileged, downtrodden sections of the society. The primary aim of Kaarwaa.N is to tutor students for the JNV (Jawahar Navodaya Vidhyalaya) Entrance Exam and encourage “girls’ education”.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              sit quia doloremque, quisquam harum consequatur debitis expedita
-              dolorum maxime temporibus pariatur ratione velit quibusdam ullam
-              fuga hic deleniti at error.
+            We organize innumerous activities to help the marginalized and create awareness about various social issues. Addressing issues from health and hygiene to education and environment, the members of Kaarwaa.N believe in working towards making this world a better place.
             </p>
 
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-white px-4 my-10 py-1 rounded-full bg-[#24387a]">
@@ -77,8 +69,8 @@ function Homepage() {
         <div className="aboutimage bg- h-96 w-1/2">
           <div className="h-40 w-full bg-[#24387a]"></div>
           <img
-            className="-translate-y-16"
-            src="https://imgs.search.brave.com/ja4k5TM1dYkUiwKpscJHz1Iu259-i1hmDGKRq327ydo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/YXBtY2RuLm9yZy85/ZDRkMDc2ZTgyZDg3/ZjEwOWM5NDU0MDQ3/OTZlNDlkYjE0MDc4/OGIyL3dpZGVzY3Jl/ZW4vYTZjNmMyLTIw/MjIwOTA3LW5vcnRo/aWdoc2Nob29sZm9v/dGJhbGwzMDMtNjAw/LmpwZw"
+            className="-translate-y-16 -translate-x-8"
+            src="./images/aboutusimage.jpg"
             alt=""
           />
         </div>
@@ -118,7 +110,64 @@ function Homepage() {
         Introduce Your Featured <br />
         Now Profit Causes
       </h1>
-      <div className="w-full my-12 justify-center px-32 flex gap-12 h-full">
+      <div className="w-full flex-wrap  my-12 justify-center px-32 flex gap-12 h-full">
+        <div className="card overflow-hidden">
+          <img
+            className="images"
+            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            alt=""
+          />
+          <div className="detailstoshow bg-white">
+            <h1 className="text-xl p-4 font-semibold text-[#24387a]">
+              It Takes A Global Village To Climinate A Disease
+            </h1>
+            <p className="px-4 pb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio non eius impedit!
+            </p>
+            <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
+              Read More
+            </button>
+          </div>
+        </div>
+        <div className="card overflow-hidden">
+          <img
+            className="images"
+            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            alt=""
+          />
+          <div className="detailstoshow bg-white">
+            <h1 className="text-xl p-4 font-semibold text-[#24387a]">
+              It Takes A Global Village To Climinate A Disease
+            </h1>
+            <p className="px-4 pb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio non eius impedit!
+            </p>
+            <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
+              Read More
+            </button>
+          </div>
+        </div>
+        <div className="card overflow-hidden">
+          <img
+            className="images"
+            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            alt=""
+          />
+          <div className="detailstoshow bg-white">
+            <h1 className="text-xl p-4 font-semibold text-[#24387a]">
+              It Takes A Global Village To Climinate A Disease
+            </h1>
+            <p className="px-4 pb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio non eius impedit!
+            </p>
+            <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
+              Read More
+            </button>
+          </div>
+        </div>
         <div className="card overflow-hidden">
           <img
             className="images"
