@@ -186,9 +186,12 @@ background-image: linear-gradient(to left, #1e9600, #fff200, #ff0000);;
   .navbar2{
     display: none;
   }
+  .navbarin{
+    display: flex;
+  }
 
 
-  @media (max-width:600px) {
+  @media (max-width:1080px) {
     .navbarin{
         display: none;
     }
@@ -250,6 +253,13 @@ background-image: linear-gradient(to left, #1e9600, #fff200, #ff0000);;
     }
     .image{
       transform: translate(0px);
+    }
+    .programbg{
+      padding: 0px;
+    }
+    .programdata{
+      width: 100%;
+      padding: 0px 10px;
     }
     .cards{
       padding: 0px;

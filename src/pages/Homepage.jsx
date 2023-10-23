@@ -75,15 +75,15 @@ A step for the welfare of another India.
           />
         </div>
       </div>
-      {/* <div className="flex flex-col items-center h-96 text-white w-full px-32 py-12 bg-[#24387a] programbg">
-        <h1 className="text-4xl">Program To Empower Others</h1>
-        <p className="text-center w-2/3 text-sm mt-6">
+      <div className="flex flex-col items-center h-full text-white w-full px-32 py-12 bg-[#24387a] programbg">
+        <h1 className="text-4xl text-center">Program To Empower Others</h1>
+        <p className="programdata text-center w-2/3 text-sm mt-6">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsa!
           Possimus, tempora! Expedita dicta quasi quidem accusantium temporibus
           repudiandae voluptate odio, distinctio nesciunt, quam eum, provident
           mollitia corrupti quisquam praesentium!
         </p>
-        <div className="w-2/3 my-10 gap-4 flex justify-center ">
+        <div className="w-2/3 programdata my-10 gap-4 flex-row flex justify-center ">
           <div className="w-full h-24  flex flex-col justify-center items-center sideborder">
             <h1 className="text-4xl">24</h1>
             <p className="text-sm">Aryan Tyagi</p>
@@ -104,7 +104,7 @@ A step for the welfare of another India.
             <p className="text-sm">Aryan Tyagi</p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <h1 className="text-4xl font-semibold my-12 mt-32 text-center text-[#24387a]">
         Introduce Your Featured <br />
@@ -119,11 +119,10 @@ A step for the welfare of another India.
           />
           <div className="detailstoshow bg-white">
             <h1 className="text-xl p-4 font-semibold text-[#24387a]">
-              It Takes A Global Village To Climinate A Disease
+            Nukkad Natak:
             </h1>
             <p className="px-4 pb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio non eius impedit!
+            Nukkad nataks - a form of street theater performed by the members to create an awareness amongst people regarding various social issues. 
             </p>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               Read More
@@ -138,11 +137,10 @@ A step for the welfare of another India.
           />
           <div className="detailstoshow bg-white">
             <h1 className="text-xl p-4 font-semibold text-[#24387a]">
-              It Takes A Global Village To Climinate A Disease
+            Blood Donation:  
             </h1>
             <p className="px-4 pb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio non eius impedit!
+            “A single drop of blood can make a huge difference.”  Every day thousands of lives are saved when someone donates blood. Contributing to this noble cause, Kaarwaa.N organizes blood donation camps.
             </p>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               Read More
@@ -157,11 +155,10 @@ A step for the welfare of another India.
           />
           <div className="detailstoshow bg-white">
             <h1 className="text-xl p-4 font-semibold text-[#24387a]">
-              It Takes A Global Village To Climinate A Disease
+            Plantation: 
             </h1>
             <p className="px-4 pb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio non eius impedit!
+            “He who plants a tree, plants a hope.” Deforestation is a severe threat to the environment. In order to curb the consequences of deforestation, Kaarwaa.N conducts plantation drives wherein saplings are planted in different institutions. It is conducted in association with municipal corporation.
             </p>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               Read More
@@ -176,11 +173,10 @@ A step for the welfare of another India.
           />
           <div className="detailstoshow bg-white">
             <h1 className="text-xl p-4 font-semibold text-[#24387a]">
-              It Takes A Global Village To Climinate A Disease
+            Clothes distribution: 
             </h1>
             <p className="px-4 pb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio non eius impedit!
+            Clothes distribution: Kaarwaa.N frequently donates clothes to the less fortunate ones. The clothes are received from households and then distributed to the needy by volunteers.
             </p>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               Read More
@@ -195,11 +191,10 @@ A step for the welfare of another India.
           />
           <div className="detailstoshow bg-white">
             <h1 className="text-xl p-4 font-semibold text-[#24387a]">
-              It Takes A Global Village To Climinate A Disease
+            Orphanage visits: 
             </h1>
             <p className="px-4 pb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio non eius impedit!
+            Orphanage visits: The members of Kaarwaa.N occasionally visit the orphanage to spend time with the misfortunate ones/those robbed of parental love and guidance. We organize various fun activities to engage the children and refresh them. We try to fill their lives with a little love and care and encourage these young souls to strive in their lives. 
             </p>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               Read More
@@ -214,11 +209,10 @@ A step for the welfare of another India.
           />
           <div className="detailstoshow bg-white">
             <h1 className="text-xl p-4 font-semibold text-[#24387a]">
-              It Takes A Global Village To Climinate A Disease
+            Preparing students for entrance exam:
             </h1>
             <p className="px-4 pb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio non eius impedit!
+            Kaarwaa.N aims to shine light in the dark corners of the underprivileged by educating them for these life changing exams. Over the years members of Kaarwaa.N have volunteered to tutor the students from nearby schools nurturing their minds and shaping their future.
             </p>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 m-4 rounded-lg border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               Read More
