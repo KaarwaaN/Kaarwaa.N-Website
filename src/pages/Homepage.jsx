@@ -1,20 +1,19 @@
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import { BsArrowUpRight } from "react-icons/bs";
 import Tshirt from "../components/Tshirt";
 import Testimonials from "../components/Testimonials";
 // import CreateDonationForm from "../components/Forms/FinancialHelpForm";
-import DonationSection from "../components/Donations";
+
+import { Link } from "react-router-dom";
 
 function Homepage() {
+
   return (
     <>
-      <div className="fixed navbar bg-white z-40 w-full">
-        <Navbar />
-      </div>
+\
 
       {/* home page  */}
-      <div className="px-12 gap-44 items-center flex justify-center h-screen w-full bg-[url('./images/homebg.png')] home">
+      <div id="home" className="px-12 pt-20 gap-44 items-center flex justify-center h-screen w-full bg-[url('./images/homebg.png')] home">
         <div className="pl-20 taglinediv">
           <h1 className="text-6xl tagline w-3/5 pr-20 text-[#24387a] font-semibold">
          <span className="kaarwaanbg"> Kaarwaa.N...</span><br />
@@ -27,25 +26,22 @@ A step for the welfare of another India.
             nostrum. Quis, maiores.
           </p>
           <div className="h-auto flex justify-center gap-6 py-6 w-96 ">
+            <Link to="/Donation">
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-white px-4 py-1 rounded-full bg-[#24387a] hover:bg-white hover:text-[#24387a] duration-300 hover:border-2 hover:border-[#24387a]">
               Donate Now <BsArrowUpRight />
             </button>
+            </Link>
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 rounded-full border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
               View Our Work
             </button>
           </div>
         </div>
         <div className="h-96 sideimg w-96 overflow-hidden border-8 border-black rounded-full">
-          {/* <img
-            className="h-full w-full"
-            src="https://imgs.search.brave.com/v5oJc4ZJrb6I4eq15gzv-T4XNMKwdNIXaaLG83y0_ZQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/ODg1MjE3ODc5OTEt/ZWQ3YmJhYWU3NzNj/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/amIyeHNaV04wYVc5/dUxYQmhaMlY4TVRk/OE1URXhOalV6Tkh4/OFpXNThNSHg4Zkh4/OCZ3PTEwMDAmcT04/MA"
-            alt=""
-          /> */}
         </div>
       </div>
 
       {/* about us page */}
-      <div className="flex aboutdiv my-20 flex-row">
+      <div id="about" className="flex aboutdiv my-20 pt-20 flex-row">
         <div className="flex detailsdiv flex-col w-1/2">
           <div className="w-full py-4 p-12 pl-32 h-full flex items-start abouthread text-white flex-col bg-[#24387a]">
             <h1 className="py-3">About Us</h1>
@@ -106,7 +102,7 @@ A step for the welfare of another India.
         </div>
       </div>
 
-      <h1 className="text-4xl font-semibold my-12 mt-32 text-center text-[#24387a]">
+      <h1 id="ourwork" className="text-4xl pt-20 font-semibold my-12 mt-32 text-center text-[#24387a]">
         Introduce Your Featured <br />
         Now Profit Causes
       </h1>
@@ -226,7 +222,6 @@ A step for the welfare of another India.
       </div>
 
       <div>
-      <DonationSection/>
        <Testimonials/>
         <Footer />
       </div>
