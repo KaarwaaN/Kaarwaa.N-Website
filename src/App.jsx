@@ -4,7 +4,7 @@ import Donation from "./pages/Donation"
 import Navbar from "./components/Navbar"
 import Gallary from "./pages/Gallary"
 import Aboutus from "./pages/Aboutus"
-import Footer from "./components/Footer"
+// import Footer from "./components/Footer"
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path="/Donation" element={<Donation/>}/>
         <Route path="/aboutus" element={<Aboutus/>}/>
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </BrowserRouter>
 
     
