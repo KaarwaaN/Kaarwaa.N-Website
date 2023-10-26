@@ -33,9 +33,9 @@ function Footer() {
         <div className="w-full md:w-1/4">
           <div className="text-lg font-semibold mb-4">Main Menu</div>
           <ul className="text-sm font-light space-y-4  pb-4">
-            <li><Link to="#" className="hover:text-blue-400">Home</Link></li>
-            <li><Link to="#" className="hover:text-blue-400">About Us</Link></li>
-            <li><Link to="#" className="hover:text-blue-400">Photo Gallery</Link></li>
+            <li><Link to="/home" className="hover:text-blue-400">Home</Link></li>
+            <li><Link to="/aboutus" className="hover:text-blue-400">About Us</Link></li>
+            <li><Link to="/gallery" className="hover:text-blue-400">Photo Gallery</Link></li>
             <li><Link to="#" className="hover:text-blue-400">Contact Us</Link></li>
           </ul>
         </div>

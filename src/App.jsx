@@ -3,6 +3,8 @@ import Homepage from "./pages/Homepage"
 import Donation from "./pages/Donation"
 import Navbar from "./components/Navbar"
 import Gallary from "./pages/Gallary"
+import Aboutus from "./pages/Aboutus"
+// import Footer from "./components/Footer"
 
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
         <Route path="/home" element={<Homepage/>}/>
         <Route path="/gallery" element={<Gallary/>}/>
         <Route path="/Donation" element={<Donation/>}/>
+        <Route path="/aboutus" element={<Aboutus/>}/>
       </Routes>
+      {/* <Footer/> */}
     </BrowserRouter>
 
     
