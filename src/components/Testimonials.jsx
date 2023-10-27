@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { AnimatePresence,motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import mentor_1 from "../assets/mentors/mentor_1.jpg";
 import mentor_2 from "../assets/mentors/mentor_2.jpg";
 import mentor_3 from "../assets/mentors/mentor_3.jpg";
@@ -90,7 +90,7 @@ const Testimonials = () => {
           <motion.img
             src={testimonials[previousImage].image}
             alt={testimonials[previousImage].name}
-            className="w-20 h-20 object-cover rounded-full mr-36 sm:mr-6 translate-y-7"
+            className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-full mr-10 sm:mr-6 translate-y-5"
           />
           <AnimatePresence initial={false} mode="wait">
             <motion.img
@@ -101,13 +101,13 @@ const Testimonials = () => {
               transition={{ duration: 0.5 }}
               src={testimonials[selectedTestimonial].image}
               alt={testimonials[selectedTestimonial].name}
-              className="w-44 h-44 object-cover rounded-full mx-auto"
+              className="w-32 h-32 sm:w-44 sm:h-44 object-cover rounded-full mx-auto"
             />
           </AnimatePresence>
           <motion.img
             src={testimonials[nextImage].image}
             alt={testimonials[nextImage].name}
-            className="w-20 trans h-20 object-cover rounded-full ml-36 sm:ml-6 translate-y-6"
+            className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-full ml-10 sm:ml-6 translate-y-5"
           />
           <motion.button
             whileHover={{ scale: 1.1 }}

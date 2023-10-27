@@ -5,6 +5,7 @@ import Testimonials from "../components/Testimonials";
 // import CreateDonationForm from "../components/Forms/FinancialHelpForm";
 
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 function Homepage() {
 
@@ -225,6 +226,7 @@ A step for the welfare of another India.
       <div>
        <Testimonials/>
       </div>
+      <Footer/>
     </>
   );
 }

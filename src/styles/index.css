@@ -83,9 +83,9 @@ background-image: linear-gradient(to left, #1e9600, #fff200, #ff0000);;
 
 
 /* source code */
-
-.form-container {
-    width: 400px;
+/* 
+.form-container { */
+    /* width: 400px;
     background: linear-gradient(#212121, #212121) padding-box,
                 linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
     border: 2px solid transparent;
@@ -182,7 +182,7 @@ background-image: linear-gradient(to left, #1e9600, #fff200, #ff0000);;
   .form-container .form-submit-btn:hover {
     background-color: #fff;
     border-color: #fff;
-  }
+  } */
   .navbar2{
     display: none;
   }
@@ -190,7 +190,7 @@ background-image: linear-gradient(to left, #1e9600, #fff200, #ff0000);;
     display: flex;
   }
 
-
+ 
   @media (max-width:1080px) {
     .navbarin{
         display: none;

@@ -59,17 +59,41 @@ function FinancialHelpForm({closeForm}) {
       <div className="mb-4">
         <button className="float-right hover:scale-150  text-red-600 hover:text-red-800" onClick={(closeForm)}>✕</button>
       </div>
-      <div className="text-2xl font-semibold text-center mb-4">
+      <div className="text-xl font-semibold text-center mb-4">
         Financial Donation Form
       </div>
       
-      <p className="text-gray-600 text-center mb-4 text-xs">
+      <p className="text-gray-600 text-center mb-4 text-[10px]">
         This form is intended to collect information of financial donations. Please do not pay sums exceeding $ X without contacting us. You may choose to remain anonymous, in which case you may skip identification fields. The screenshot of your transaction, however, is compulsory as we may need it to verify and keep track of your transactions.
       </p>
     
       <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto p-4 bg-white shadow-md rounded-lg">
+      <div className='flex gap-2'>
         <div className="mb-2">
-          <label className="block text-gray-600 text-sm font-semibold mb-2">Email *</label>
+          <label className="block text-gray-600 text-xs font-semibold mb-2">Name</label>
+          <input
+            {...register('name')}
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
+          />
+        </div>
+        <div className="mb-2">
+          <label className="block text-gray-600 text-xs font-semibold mb-2">Contact No.</label>
+          <input
+            {...register('contactNo', {
+              required: 'This field is required',
+              pattern: {
+                value: /^\d{10}$/,
+                message: 'Enter a valid 10-digit phone number',
+              },
+            })}
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
+          />
+          {errors.contactNo && <p className="text-red-500 text-xs mt-1">{errors.contactNo.message}</p>}
+        </div>
+        </div>
+        
+        <div className="mb-2">
+          <label className="block text-gray-600 text-xs font-semibold mb-2">Email </label>
           <input
             type="email"
             {...register('email', {
@@ -81,31 +105,11 @@ function FinancialHelpForm({closeForm}) {
             })}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
           />
-          {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
+          {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
         </div>
+       
         <div className="mb-2">
-          <label className="block text-gray-600 text-sm font-semibold mb-2">Name</label>
-          <input
-            {...register('name')}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
-          />
-        </div>
-        <div className="mb-2">
-          <label className="block text-gray-600 text-sm font-semibold mb-2">Contact No.</label>
-          <input
-            {...register('contactNo', {
-              required: 'This field is required',
-              pattern: {
-                value: /^\d{10}$/,
-                message: 'Enter a valid 10-digit phone number',
-              },
-            })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
-          />
-          {errors.contactNo && <p className="text-red-500 text-sm mt-1">{errors.contactNo.message}</p>}
-        </div>
-        <div className="mb-2">
-          <label className="block text-gray-600 text-sm font-semibold mb-2">Amount you want to donate *</label>
+          <label className="block text-gray-600 text-xs font-semibold mb-2">Amount you want to donate </label>
           <input
             type="number"
             {...register('amount', {
@@ -117,35 +121,39 @@ function FinancialHelpForm({closeForm}) {
             })}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
           />
-          {errors.amount && <p className="text-red-500 text-sm mt-1">{errors.amount.message}</p>}
+          {errors.amount && <p className="text-red-500 text-xs mt-1">{errors.amount.message}</p>}
         </div>
         <div className="mb-2">
-          <label className="block text-gray-600 text-sm font-semibold">Your purpose to donate</label>
+          <label className="block text-gray-600 text-xs font-semibold">Your purpose to donate</label>
           <input
             {...register('purpose')}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
           />
         </div>
         <div className="mb-2">
-          <label className="block text-gray-600 text-sm font-semibold ">Upload a screenshot of your donation *</label>
+          <label className="block text-gray-600 text-xs font-semibold ">Upload a screenshot of your donation </label>
           <input
             type="file"
             accept=".jpg, .jpeg, .png, .pdf"
             {...register('image', { required: 'This field is required' })}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
           />
-          {errors.image && <p className="text-red-500 text-sm mt-1">{errors.image.message}</p>}
+          {errors.image && <p className="text-red-500 text-xs mt-1">{errors.image.message}</p>}
         </div>
-        <button type="submit" className="w-full bg-indigo-500 text-white font-semibold py-2 rounded-md hover-bg-indigo-600">
+        <p className="text-gray-600 text-[10px] mt-4">
+         Credentials for Payment
+          <br />
+          Name - Amar Singh Garg
+          <br />
+          Mob - 7987253381
+          <br />
+          UPI - 7987253381@paytm
+        </p>
+        <button type="submit" className="w-full bg-indigo-500 mt-2  text-white font-semibold py-2 rounded-md hover-bg-indigo-600">
           Submit
         </button>
       </form>
-      <p className="text-gray-600 mt-4 text-xs">
-        For any queries, feel free to contact us:<br />
-        Amar Singh Garg - 7987253381<br />
-        Akshat Rahangdale - 6266958866<br />
-        Aditya Pati Tripathi - 9580595332
-      </p>
+     
     </div>
   );
 }

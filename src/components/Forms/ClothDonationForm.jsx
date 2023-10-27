@@ -44,7 +44,7 @@ function ClothDonationForm({closeForm}) {
     <div className="mb-4">
       <button className="float-right hover:scale-150  text-red-600 hover:text-red-800" onClick={(closeForm)}>✕</button>
     </div>
-    <div className="text-2xl font-semibold text-center mb-1">
+    <div className="text-xl font-semibold text-center mb-1">
       Cloth Donation Form
     </div>
     
@@ -52,17 +52,18 @@ function ClothDonationForm({closeForm}) {
       This form is intended to collect information of Cloth donations.Donate saraswati to the kids
     </p>
     <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto p-4 bg-white shadow-md rounded-lg">
+      <div className='flex gap-2'>
       <div className="mb-4">
-        <label className="block text-gray-600 text-sm font-semibold mb-2">Name *</label>
+        <label className="block text-gray-600 text-xs font-semibold mb-2">Name *</label>
         <input
           type="text"
           {...register('name', { required: 'This field is required' })}
           className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
         />
-        {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
+        {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
       </div>
       <div className="mb-4">
-        <label className="block text-gray-600 text-sm font-semibold mb-2">Mobile Number *</label>
+        <label className="block text-gray-600 text-xs font-semibold mb-2">Mobile Number *</label>
         <input
           type="text"
           {...register('mobileNumber', { required: 'This field is required',
@@ -72,10 +73,11 @@ function ClothDonationForm({closeForm}) {
               }, })}
           className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
         />
-        {errors.mobileNumber && <p className="text-red-500 text-sm mt-1">{errors.mobileNumber.message}</p>}
+        {errors.mobileNumber && <p className="text-red-500 text-xs mt-1">{errors.mobileNumber.message}</p>}
+      </div>
       </div>
       <div className="mb-4">
-        <label className="block text-gray-600 text-sm font-semibold mb-2">City</label>
+        <label className="block text-gray-600 text-xs font-semibold mb-2">City</label>
         <input
           type="text"
           {...register('city')}
@@ -85,15 +87,15 @@ function ClothDonationForm({closeForm}) {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-600 text-sm font-semibold mb-2">Address</label>
+        <label className="block text-gray-600 text-xs font-semibold mb-2">Address</label>
         <textarea
           {...register('address')}
           rows="4"
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
+          className="w-full h-12 resize-none px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200"
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-600 text-sm font-semibold mb-2">Estimated amount of clothes</label>
+        <label className="block text-gray-600 text-xs font-semibold mb-2">Estimated amount of clothes</label>
         <input
           type="text"
           {...register('clothesAmount')}
