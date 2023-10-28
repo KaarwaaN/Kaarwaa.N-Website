@@ -14,7 +14,7 @@ function Homepage() {
 \
 
       {/* home page  */}
-      <div id="home" className="px-12 pt-20 gap-44 items-center flex justify-center h-screen w-full bg-[url('./images/homebg.png')] home">
+      <div id="home" className="px-12 pt-20 gap-44 items-center flex justify-center lg:h-screen h-full w-full bg-[url('./images/homebg.png')] home">
         <div className="pl-20 taglinediv">
           <h1 className="text-6xl tagline w-3/5 pr-20 text-[#24387a] font-semibold">
          <span className="kaarwaanbg"> Kaarwaa.N...</span><br />
@@ -32,9 +32,11 @@ A step for the welfare of another India.
               Donate Now <BsArrowUpRight />
             </button>
             </Link>
+            <Link to="/tshirt">
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-[#24387a] px-4 py-1 rounded-full border-[#24387a] hover:bg-[#24387a] hover:text-white duration-300">
-              View Our Work
+              Get Kaarwaa.N Tshirt
             </button>
+            </Link>
           </div>
         </div>
         <div className="h-96 sideimg w-96 overflow-hidden border-8 border-black rounded-full">
@@ -59,7 +61,7 @@ A step for the welfare of another India.
             </p>
           <Link to="/aboutus">
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-white px-4 my-10 py-1 rounded-full bg-[#24387a]">
-              Learn More <BsArrowUpRight />
+              Meet Our Team <BsArrowUpRight />
             </button>
           </Link>
           </div>
@@ -219,9 +221,9 @@ A step for the welfare of another India.
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <Tshirt />
-      </div>
+      </div> */}
 
       <div>
        <Testimonials/>

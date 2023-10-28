@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import supabase, { supabaseUrl } from '../../supabase';
 
-function TshirtForm({ closeForm }) {
+function TshirtForm() {
   const { register, reset, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = async (data) => {
@@ -58,9 +58,7 @@ function TshirtForm({ closeForm }) {
   return (
     <>
     <div className="min-w-[15rem] md:min-w-[30rem]  mx-auto p-4 bg-white shadow-md rounded-lg">
-      <div className="mb-2">
-        <button className="float-right hover:scale-150 text-red-600 hover:text-red-800" onClick={closeForm}>✕</button>
-      </div>
+      
       <h2 className="text-xl font-semibold text-center mb-1">Get Your Tshirt Now!</h2>
 
       <form onSubmit={handleSubmit(onSubmit)} className="mx-auto p-4 bg-white shadow-md rounded-lg">

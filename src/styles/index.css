@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+
 .home{
     background-position: center;
     background-repeat: no-repeat;
@@ -14,6 +21,7 @@ color: transparent;
 background-image: linear-gradient(to left, #1e9600, #fff200, #ff0000);;
 
 }
+
 .sideimg{
     position: absolute;
     top: 26%;
@@ -192,6 +200,10 @@ background-image: linear-gradient(to left, #1e9600, #fff200, #ff0000);;
 
  
   @media (max-width:1080px) {
+    .tshirtmob{
+      width: 400px;
+      height: 500px;
+    }
     .navbarin{
         display: none;
     }
