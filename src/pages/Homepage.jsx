@@ -3,6 +3,11 @@ import { BsArrowUpRight } from "react-icons/bs";
 import Tshirt from "../components/Tshirt";
 import Testimonials from "../components/Testimonials";
 import blood_donation from "../assets/homepage/blood_donation.jpeg"
+import cloth_donation from "../assets/homepage/cloth_donation.jpeg"
+import nukkad_natak from "../assets/homepage/nukkad_natak.jpeg"
+import plantation from "../assets/homepage/plantation.jpeg"
+import teaching from "../assets/homepage/teaching.jpeg"
+import voting from "../assets/homepage/voting.jpeg"
 // import CreateDonationForm from "../components/Forms/FinancialHelpForm";
 
 import { Link } from "react-router-dom";
@@ -115,7 +120,7 @@ A step for the welfare of another India.
         <div className="card overflow-hidden">
           <img
             className="images"
-            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            src={nukkad_natak}
             alt=""
           />
           <div className="detailstoshow bg-white">
@@ -151,7 +156,7 @@ A step for the welfare of another India.
         <div className="card overflow-hidden">
           <img
             className="images"
-            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            src={plantation}
             alt=""
           />
           <div className="detailstoshow bg-white">
@@ -169,7 +174,7 @@ A step for the welfare of another India.
         <div className="card overflow-hidden">
           <img
             className="images"
-            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            src={cloth_donation}
             alt=""
           />
           <div className="detailstoshow bg-white">
@@ -187,7 +192,7 @@ A step for the welfare of another India.
         <div className="card overflow-hidden">
           <img
             className="images"
-            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            src={voting}
             alt=""
           />
           <div className="detailstoshow bg-white">
@@ -205,7 +210,7 @@ A step for the welfare of another India.
         <div className="card overflow-hidden">
           <img
             className="images"
-            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            src={teaching}
             alt=""
           />
           <div className="detailstoshow bg-white">
