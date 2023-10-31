@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FaArrowLeft, FaArrowRight, FaCross, FaTimes } from 'react-icons/fa';
-
+import { FaArrowLeft, FaArrowRight,FaTimes } from 'react-icons/fa';
+import { AnimatePresence, motion } from "framer-motion";
 const PhotoGallery = () => {
   const images=[
     {
@@ -76,27 +76,36 @@ const PhotoGallery = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-    {images.map((image, index) => (
-      <div key={index} className="relative aspect-ratio-container cursor-pointer">
-        <div className="aspect-ratio-content">
-          <img
-            src={image.img}
-            alt=""
-            className="object-cover w-full h-full"
-            onClick={() => openImage(index)}
-          />
+      {images.map((image, index) => (
+        <div key={index} className="relative aspect-ratio-container cursor-pointer">
+          <div className="aspect-ratio-content">
+            <img
+              src={image.img}
+              alt=""
+              className="object-cover w-full h-full"
+              onClick={() => openImage(index)}
+            />
+          </div>
         </div>
-      </div>
-    ))}
-  
+      ))}
 
       {selectedImage !== null && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-90">
-          <div className="max-w-full max-h-full relative">
+        <motion.div // Use motion.div for smoother animations
+          initial={{ opacity: 0 }} // Initial opacity
+          animate={{ opacity: 1 }} // Animate to full opacity
+          exit={{ opacity: 0 }} // Animate to zero opacity
+          className="fixed inset-0 top-0 flex items-center justify-center z-[200] bg-black bg-opacity-90"
+        >
+          <motion.div // Use motion.div for smoother animations
+            initial={{ scale: 0.8 }} // Initial scale
+            animate={{ scale: 1 }} // Animate to full scale
+            exit={{ scale: 0.8 }} // Animate to a smaller scale
+            className="max-w-full max-h-full relative"
+          >
             <img
               src={images[selectedImage].img}
               alt=""
-              className="max-w-full max-h-full"
+              className="w-100 h-[40rem] rounded-md"
             />
             <button
               className="absolute bottom-4 left-4 text-white text-2xl cursor-pointer"
@@ -117,11 +126,10 @@ const PhotoGallery = () => {
             >
               <FaTimes />
             </button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
     </div>
   );
 };
-
 export default PhotoGallery;

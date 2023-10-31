@@ -43,7 +43,7 @@ function JoinUsForm({closeForm}) {
   }
 
   return (
-    <div className="min-w-md md:min-w-[25rem] mx-auto p-4 bg-white shadow-md rounded-lg">
+    <div className="min-w-md md:min-w-[25rem] mx-auto p-4 bg-white shadow-md rounded-lg z-[9999]">
     <div className="mb-4">
       <button className="float-right hover:scale-150  text-red-600 hover:text-red-800" onClick={(closeForm)}>✕</button>
     </div>

@@ -52,7 +52,7 @@ function DonationSection() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50"
+            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-[999]"
           >
             <ClothDonationForm closeForm={closeForm} />
           </motion.div>
@@ -63,7 +63,7 @@ function DonationSection() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50"
+            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-[999]"
           >
             <EducationalKitDonationForm closeForm={closeForm} />
           </motion.div>
@@ -74,7 +74,7 @@ function DonationSection() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50"
+            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-[999]"
           >
             <FinancialHelpForm closeForm={closeForm} />
           </motion.div>

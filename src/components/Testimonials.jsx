@@ -72,7 +72,7 @@ const Testimonials = () => {
   }, [selectedTestimonial]);
 
   return (
-    <div className="relative mx-auto max-w-screen-lg m-6">
+    <div className="mx-4 md:mx-auto max-w-screen-lg my-6">
       <div className="bg-white rounded-lg shadow-md p-4">
         <p className="text-center opacity-80 text-xs m-1">
           adipisicing elit.cta quasi quidem accusantium temporibus repudiandae voluptate odio, distincti!
@@ -90,7 +90,7 @@ const Testimonials = () => {
           <motion.img
             src={testimonials[previousImage].image}
             alt={testimonials[previousImage].name}
-            className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-full mr-10 sm:mr-6 translate-y-5"
+            className="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full mr-4 sm:mr-6 sm:translate-y-5"
           />
           <AnimatePresence initial={false} mode="wait">
             <motion.img
@@ -101,13 +101,13 @@ const Testimonials = () => {
               transition={{ duration: 0.5 }}
               src={testimonials[selectedTestimonial].image}
               alt={testimonials[selectedTestimonial].name}
-              className="w-32 h-32 sm:w-44 sm:h-44 object-cover rounded-full mx-auto"
+              className="w-20 h-20 sm:w-32 sm:h-32 object-cover rounded-full mx-auto"
             />
           </AnimatePresence>
           <motion.img
             src={testimonials[nextImage].image}
             alt={testimonials[nextImage].name}
-            className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-full ml-10 sm:ml-6 translate-y-5"
+            className="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full ml-4 sm:ml-6 sm:translate-y-5"
           />
           <motion.button
             whileHover={{ scale: 1.1 }}
