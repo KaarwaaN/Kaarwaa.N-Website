@@ -31,12 +31,13 @@ const PhotoGallery = () => {
       {images.map((image, index) => (
         <div key={index} className="relative aspect-ratio-container cursor-pointer" style={{ flex: '1', minWidth: '25%' }}>
           <div className="aspect-ratio-content">
-            <img
+          <img
               src={image.img}
               alt=""
-              className="object-cover w-full h-full"
+              className="object-contain w-full h-auto max-h-[80vh] max-w-full cursor-pointer"
               onClick={() => openImage(index)}
             />
+
           </div>
         </div>
       ))}
@@ -57,7 +58,7 @@ const PhotoGallery = () => {
             <img
               src={images[selectedImage].img}
               alt=""
-              className="w-100 h-[40rem] rounded-md"
+              className="w-100 h-[20rem] rounded-md"
             />
             <button
               className="absolute bottom-4 left-4 text-white text-2xl cursor-pointer"
