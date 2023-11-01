@@ -17,44 +17,44 @@
 // export { one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen };
 const images = [
     {
-      img: "src/assets/gallery/one.jpg"
+      img: "gallery/one.jpg"
     },
     {
-      img: "src/assets/gallery/two.jpg"
+      img: "gallery/two.jpg"
     },
     {
-      img: "src/assets/gallery/three.jpg"
+      img: "gallery/three.jpg"
     },
     {
-      img: "src/assets/gallery/four.jpg"
+      img: "gallery/four.jpg"
     },
     {
-      img: "src/assets/gallery/five.jpg"
+      img: "gallery/five.jpg"
     },
     {
-      img: "src/assets/gallery/six.jpg"
+      img: "gallery/six.jpg"
     },
     {
-      img: "src/assets/gallery/seven.jpg"
+      img: "gallery/seven.jpg"
     },
     {
-      img: "src/assets/gallery/eight.jpg"
+      img: "gallery/eight.jpg"
     },
    
     {
-      img: "src/assets/gallery/ten.jpg"
+      img: "gallery/ten.jpg"
     },
     {
-      img: "src/assets/gallery/eleven.jpg"
+      img: "gallery/eleven.jpg"
     },
     {
-      img: "src/assets/gallery/twelve.jpg"
+      img: "gallery/twelve.jpg"
     },
     {
-      img: "src/assets/gallery/therteen.jpg"
+      img: "gallery/therteen.jpg"
     },
     {
-      img: "src/assets/gallery/fourteen.jpg"
+      img: "gallery/fourteen.jpg"
     },
    
   ];

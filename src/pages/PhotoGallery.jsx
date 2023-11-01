@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight,FaTimes } from 'react-icons/fa';
 import { AnimatePresence, motion } from "framer-motion";
-import images from '../assets/gallery';
+import images from '../../public/gallery';
 const PhotoGallery = () => {
 
   const [selectedImage, setSelectedImage] = useState(null);
