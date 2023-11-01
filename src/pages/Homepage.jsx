@@ -20,7 +20,7 @@ function Homepage() {
 \
 
       {/* home page  */}
-      <div id="home" className="px-12 pt-20 gap-44 items-center flex justify-center lg:h-screen h-full w-full bg-[url('./images/homebg.png')] home">
+      <div id="home" className="px-12 pt-20 gap-44 items-center flex justify-center lg:h-screen h-full w-full home">
         <div className="pl-20 taglinediv">
           <h1 className="text-6xl tagline w-3/5 pr-20 text-[#24387a] font-semibold">
          <span className="kaarwaanbg"> Kaarwaa.N...</span><br />
