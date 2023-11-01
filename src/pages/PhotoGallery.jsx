@@ -1,57 +1,9 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight,FaTimes } from 'react-icons/fa';
 import { AnimatePresence, motion } from "framer-motion";
+import images from '../assets/gallery';
 const PhotoGallery = () => {
-  const images=[
-    {
-      img:"src/assets/gallery/one.jpg"
-    },
-    {
-      img:"src/assets/gallery/two.jpg"
-    },
-    {
-      img:"src/assets/gallery/three.jpg"
-    },
-    {
-      img:"src/assets/gallery/four.jpg"
-    },
-    {
-      img:"src/assets/gallery/five.jpg"
-    },
-    {
-      img:"src/assets/gallery/six.jpg"
-    },
-    {
-      img:"src/assets/gallery/seven.jpg"
-    },
-    {
-      img:"src/assets/gallery/eight.jpg"
-    },
-    {
-      img:"src/assets/gallery/nine.jpg"
-    },
-    {
-      img:"src/assets/gallery/ten.jpg"
-    },
-    {
-      img:"src/assets/gallery/eleven.jpg"
-    },
-    {
-      img:"src/assets/gallery/twelve.jpg"
-    },
-    {
-      img:"src/assets/gallery/therteen.jpg"
-    },
-    {
-      img:"src/assets/gallery/fourteen.jpg"
-    },
-    {
-      img:"src/assets/gallery/fiveteen.jpg"
-    },
-    {
-      img:"src/assets/gallery/sixteen.jpg"
-    },
-  ]
+
   const [selectedImage, setSelectedImage] = useState(null);
  
   const openImage = (index) => {
@@ -75,9 +27,9 @@ const PhotoGallery = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4" style={{ display: 'flex', flexWrap: 'wrap' , gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))'}}>
       {images.map((image, index) => (
-        <div key={index} className="relative aspect-ratio-container cursor-pointer">
+        <div key={index} className="relative aspect-ratio-container cursor-pointer" style={{ flex: '1', minWidth: '25%' }}>
           <div className="aspect-ratio-content">
             <img
               src={image.img}
