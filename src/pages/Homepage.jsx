@@ -1,6 +1,5 @@
 
 import { BsArrowUpRight } from "react-icons/bs";
-import Tshirt from "../components/Tshirt";
 import Testimonials from "../components/Testimonials";
 // import CreateDonationForm from "../components/Forms/FinancialHelpForm";
 
