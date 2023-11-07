@@ -2,9 +2,11 @@ import { useState } from "react";
 import { motion} from 'framer-motion'; 
 import { BsArrowUpRight} from "react-icons/bs";
 import JoinUsForm from "./Forms/JoinUsForm";
-import { BiMenuAltRight } from "react-icons/bi";
+import { BiMenuAltRight, BiX } from "react-icons/bi";
 import { Link } from "react-router-dom";
 function Navbar() {
+  const[showHamburgerMenu,setShowHamburgerMenu]=useState(false);
+
   const [showJoinUsForm, setShowJoinUsForm] = useState(false);
   function onClose(){
     setShowJoinUsForm(false);
@@ -30,10 +32,12 @@ function Navbar() {
       ourwork.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+
   return (
     <>
-    <div className="h-20 navbarin fixed bg-white z-50 w-full flex flex-row justify-between items-center px-32">
-        <ul className="flex text-[#24387a] font-semibold justify-start items-center gap-8">
+    <div className="h-20 navbarin fixed bg-white w-full z-[100] flex flex-row justify-between items-center px-32">
+        <ul className="flex text-[#24387a] font-semibold  z-[100]  justify-start items-center gap-8">
           <Link to="/Home">
           <li onClick={scrolltoHome} className=" hover:underline hover:underline-offset-8 hover:cursor-pointer">Home</li>
           </Link>
@@ -46,7 +50,7 @@ function Navbar() {
           <Link to="/gallery">
           <li className=" hover:underline hover:underline-offset-8 hover:cursor-pointer">Gallery</li>
           </Link>
-          <li className=" hover:underline hover:underline-offset-8 hover:cursor-pointer">Contact Us</li>
+          <li className=" hover:underline hover:underline-offset-8 hover:cursor-pointer ">Contact Us</li>
         </ul>
         <div className="flex gap-2 items-center">
           <img className="h-12" src="./images/karwaanlogo.png" alt="" />
@@ -75,15 +79,34 @@ function Navbar() {
         </div>
     </div>
 
-    <div className="flex justify-between fixed w-full bg-white navbar2 items-center">
+    <div className="flex justify-between fixed w-full p-1 z-[100] bg-white navbar2 items-center">
     <div className="flex gap-2 items-center">
           <img className="h-12" src="./images/karwaanlogo.png" alt="" />
           <h1 className="text-2xl text-[#24387a] font-semibold ">Kaarwaa.N</h1>
         </div>
-
-        <BiMenuAltRight className="text-3xl pr-"/>
+        {!showHamburgerMenu?   <BiMenuAltRight className="cursor-pointer text-3xl pr-" onClick={()=>setShowHamburgerMenu(true)}/>:<BiX className="cursor-pointer text-3xl pr-" onClick={()=>setShowHamburgerMenu(false)}/> }
+      
+        
     </div>
-    
+    {showHamburgerMenu &&
+        <div className="fixed top-[3.5rem] right-0 w-48 h-screen z-[100]  bg-[rgba(255,255,255,0.9)]  ">
+          <ul className="flex flex-col text-center  z-[50] text-[#24387a] font-semibold items-center gap-8">
+            <Link to="/Home">
+              <li onClick={scrolltoHome} className="hover:underline hover:underline-offset-8 hover:cursor-pointer">Home</li>
+            </Link>
+            <Link to="/home">
+              <li onClick={scrolltoabout} className="hover:underline hover:underline-offset-8 hover:cursor-pointer">About Us</li>
+            </Link>
+            <Link to="/home">
+              <li onClick={scrolltoOurwork} className="hover:underline hover:underline-offset-8 hover:cursor-pointer">Our Work</li>
+            </Link>
+            <Link to="/gallery">
+              <li className="hover:underline hover:underline-offset-8 hover:cursor-pointer">Gallery</li>
+            </Link>
+            <li className="hover:underline hover:underline-offset-8 hover:cursor-pointer">Contact Us</li>
+          </ul>
+        </div>
+      }
     </>
   )
 }

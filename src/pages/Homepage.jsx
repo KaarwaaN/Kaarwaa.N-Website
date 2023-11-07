@@ -1,6 +1,12 @@
 
 import { BsArrowUpRight } from "react-icons/bs";
 import Testimonials from "../components/Testimonials";
+import blood_donation from "../assets/homepage/blood_donation.jpeg"
+import cloth_donation from "../assets/homepage/cloth_donation.jpeg"
+import nukkad_natak from "../assets/homepage/nukkad_natak.jpeg"
+import plantation from "../assets/homepage/plantation.jpeg"
+import teaching from "../assets/homepage/teaching.jpeg"
+import voting from "../assets/homepage/voting.jpeg"
 // import CreateDonationForm from "../components/Forms/FinancialHelpForm";
 
 import { Link } from "react-router-dom";
@@ -13,7 +19,7 @@ function Homepage() {
 \
 
       {/* home page  */}
-      <div id="home" className="px-12 pt-20 gap-44 items-center flex justify-center lg:h-screen h-full w-full bg-[url('./images/homebg.png')] home">
+      <div id="home" className="px-12 pt-20 gap-44 items-center flex justify-center lg:h-screen h-full w-full home">
         <div className="pl-20 taglinediv">
           <h1 className="text-6xl tagline w-3/5 pr-20 text-[#24387a] font-semibold">
          <span className="kaarwaanbg"> Kaarwaa.N...</span><br />
@@ -25,7 +31,7 @@ A step for the welfare of another India.
             facilis, accusantium ut iste esse adipisci pariatur libero velit
             nostrum. Quis, maiores.
           </p>
-          <div className="h-auto flex justify-center gap-6 py-6 w-96 ">
+          <div className="h-auto flex justify-center gap-6 py-6 w-[20rem] ">
             <Link to="/Donation">
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-white px-4 py-1 rounded-full bg-[#24387a] hover:bg-white hover:text-[#24387a] duration-300 hover:border-2 hover:border-[#24387a]">
               Donate Now <BsArrowUpRight />
@@ -113,7 +119,7 @@ A step for the welfare of another India.
         <div className="card overflow-hidden">
           <img
             className="images"
-            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            src={nukkad_natak}
             alt=""
           />
           <div className="detailstoshow bg-white">
@@ -131,7 +137,7 @@ A step for the welfare of another India.
         <div className="card overflow-hidden">
           <img
             className="images"
-            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            src={blood_donation}
             alt=""
           />
           <div className="detailstoshow bg-white">
@@ -149,7 +155,7 @@ A step for the welfare of another India.
         <div className="card overflow-hidden">
           <img
             className="images"
-            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            src={plantation}
             alt=""
           />
           <div className="detailstoshow bg-white">
@@ -167,7 +173,7 @@ A step for the welfare of another India.
         <div className="card overflow-hidden">
           <img
             className="images"
-            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            src={cloth_donation}
             alt=""
           />
           <div className="detailstoshow bg-white">
@@ -185,7 +191,7 @@ A step for the welfare of another India.
         <div className="card overflow-hidden">
           <img
             className="images"
-            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            src={voting}
             alt=""
           />
           <div className="detailstoshow bg-white">
@@ -203,7 +209,7 @@ A step for the welfare of another India.
         <div className="card overflow-hidden">
           <img
             className="images"
-            src="https://imgs.search.brave.com/r3E3JuoUQ6zx-cbhlxj9jrQFItKsWXzHULDpDG0C2ng/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c2F2ZXRoZWNoaWxk/cmVuLm9yZy9jb250/ZW50L2RhbS91c2Ev/aW1hZ2VzL2Rvbm9y/cy96aW1iYWJ3ZS1m/b29kLWNyaXNpcy1j/aDE0MjA1NDItc3Eu/anBnL19qY3JfY29u/dGVudC9yZW5kaXRp/b25zL29yaWdpbmFs/LmltZy5qcGc"
+            src={teaching}
             alt=""
           />
           <div className="detailstoshow bg-white">

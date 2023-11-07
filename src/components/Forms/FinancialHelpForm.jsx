@@ -55,7 +55,7 @@ function FinancialHelpForm({closeForm}) {
   }
 
   return (
-    <div className="max-w-md mx-auto p-4 bg-white shadow-md rounded-lg">
+    <div className="max-w-md mx-auto p-4 bg-white shadow-md rounded-lg ">
       <div className="mb-4">
         <button className="float-right hover:scale-150  text-red-600 hover:text-red-800" onClick={(closeForm)}>✕</button>
       </div>
