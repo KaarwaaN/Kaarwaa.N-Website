@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import Gallary from "./pages/Gallary"
 import Aboutus from "./pages/Aboutus"
 import Tshirt from "./components/Tshirt"
+import Ourteam from "./pages/Ourteam"
 // import Footer from "./components/Footer"
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/gallery" element={<Gallary/>}/>
         <Route path="/Donation" element={<Donation/>}/>
         <Route path="/aboutus" element={<Aboutus/>}/>
+        <Route path="/ourteam" element={<Ourteam/>}/>
       </Routes>
       {/* <Footer/> */}
     </BrowserRouter>

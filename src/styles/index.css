@@ -61,19 +61,18 @@ background-image: linear-gradient(to left, #1e9600, #fff200, #ff0000);;
     border-radius: 15px 15px 0px 0px;
 }
 .card:hover .detailstoshow{
-    transform: translateY(-150px);
+    transform: translateY(-80px);
     transition-duration: 0.5s;
     opacity: 1;
 
 }
-
-
 
 .card:not(:hover) .detailstoshow{
     transform: translateY(0px);
     transition-duration: 0.5s;
 
 }
+
 
   .navbar2{
     display: none;
