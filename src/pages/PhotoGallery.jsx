@@ -51,7 +51,7 @@ const PhotoGallery = () => {
         >
           <motion.div // Use motion.div for smoother animations
             initial={{ scale: 0.8 }} // Initial scale
-            animate={{ scale: 1 }} // Animate to full scale
+            animate={{ scale: 1.8 }} // Animate to full scale
             exit={{ scale: 0.8 }} // Animate to a smaller scale
             className="max-w-full max-h-full relative"
           >
