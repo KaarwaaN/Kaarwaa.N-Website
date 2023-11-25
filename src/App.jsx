@@ -13,8 +13,8 @@ function App() {
     <BrowserRouter>
     <Navbar/>
       <Routes>
-      <Route index element={<Navigate replace to='/home'/>}/>
-        <Route path="/home" element={<Homepage/>}/>
+      {/* <Route index element={<Navigate replace to='/home'/>}/> */}
+        <Route path="/" element={<Homepage/>}/>
         <Route path="/tshirt" element={<Tshirt/>}/>
         <Route path="/gallery" element={<Gallary/>}/>
         <Route path="/Donation" element={<Donation/>}/>

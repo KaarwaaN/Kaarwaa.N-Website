@@ -38,13 +38,13 @@ function Navbar() {
     <>
     <div className="h-20 navbarin fixed bg-white w-full z-[100] flex flex-row justify-between items-center px-32">
         <ul className="flex text-[#24387a] font-semibold  z-[100]  justify-start items-center gap-8">
-          <Link to="/Home">
+          <Link to="/">
           <li onClick={scrolltoHome} className=" hover:underline hover:underline-offset-8 hover:cursor-pointer">Home</li>
           </Link>
-          <Link to="/home">
+          <Link to="/">
           <li onClick={scrolltoabout} className=" hover:underline hover:underline-offset-8 hover:cursor-pointer">About Us</li>
           </Link>
-          <Link to="/home">
+          <Link to="/">
           <li onClick={scrolltoOurwork} className=" hover:underline hover:underline-offset-8 hover:cursor-pointer">Our Work</li>
           </Link>
           <Link to="/gallery">
