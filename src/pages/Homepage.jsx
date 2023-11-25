@@ -1,6 +1,5 @@
 
 import { BsArrowUpRight } from "react-icons/bs";
-import Tshirt from "../components/Tshirt";
 import Testimonials from "../components/Testimonials";
 import blood_donation from "../assets/homepage/blood_donation.jpeg"
 import cloth_donation from "../assets/homepage/cloth_donation.jpeg"
@@ -34,7 +33,7 @@ A step for the welfare of another India.
           </p>
           <div className="h-auto flex justify-center gap-6 py-6 w-[20rem] ">
             <Link to="/Donation">
-            <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-white px-4 py-1 rounded-full bg-[#24387a] hover:bg-white hover:text-[#24387a] duration-300 hover:border-2 hover:border-[#24387a]">
+            <button className="border-2 w-full h-full flex flex-row justify-center items-center gap-2 font-semibold text-white px-4 py-1 rounded-full bg-[#24387a] hover:bg-white hover:text-[#24387a] duration-300 hover:border-2 hover:border-[#24387a]">
               Donate Now <BsArrowUpRight />
             </button>
             </Link>
@@ -65,7 +64,7 @@ A step for the welfare of another India.
             <p>
             We organize innumerous activities to help the marginalized and create awareness about various social issues. Addressing issues from health and hygiene to education and environment, the members of Kaarwaa.N believe in working towards making this world a better place.
             </p>
-          <Link to="/aboutus">
+          <Link to="/ourteam">
             <button className="border-2 flex flex-row justify-center items-center gap-2 font-semibold text-white px-4 my-10 py-1 rounded-full bg-[#24387a]">
               Meet Our Team <BsArrowUpRight />
             </button>
@@ -155,7 +154,7 @@ A step for the welfare of another India.
         </div>
         <div className="card overflow-hidden">
           <img
-            className="images"
+            className="images h-60"
             src={plantation}
             alt=""
           />
@@ -173,7 +172,7 @@ A step for the welfare of another India.
         </div>
         <div className="card overflow-hidden">
           <img
-            className="images"
+            className="images h-60"
             src={cloth_donation}
             alt=""
           />
@@ -191,7 +190,7 @@ A step for the welfare of another India.
         </div>
         <div className="card overflow-hidden">
           <img
-            className="images"
+            className="images h-60"
             src={voting}
             alt=""
           />

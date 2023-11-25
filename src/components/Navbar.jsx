@@ -18,13 +18,6 @@ function Navbar() {
       home.scrollIntoView({ behavior: 'smooth' });
     }
   }
-  const scrolltoabout=()=>{
-  
-    const about = document.getElementById('about');
-    if (about) {
-      about.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
   const scrolltoOurwork=()=>{
   
     const ourwork = document.getElementById('ourwork');
@@ -41,8 +34,8 @@ function Navbar() {
           <Link to="/">
           <li onClick={scrolltoHome} className=" hover:underline hover:underline-offset-8 hover:cursor-pointer">Home</li>
           </Link>
-          <Link to="/">
-          <li onClick={scrolltoabout} className=" hover:underline hover:underline-offset-8 hover:cursor-pointer">About Us</li>
+          <Link to="/aboutus">
+          <li className=" hover:underline hover:underline-offset-8 hover:cursor-pointer">About Us</li>
           </Link>
           <Link to="/">
           <li onClick={scrolltoOurwork} className=" hover:underline hover:underline-offset-8 hover:cursor-pointer">Our Work</li>
@@ -95,7 +88,7 @@ function Navbar() {
               <li onClick={scrolltoHome} className="hover:underline hover:underline-offset-8 hover:cursor-pointer">Home</li>
             </Link>
             <Link to="/home">
-              <li onClick={scrolltoabout} className="hover:underline hover:underline-offset-8 hover:cursor-pointer">About Us</li>
+              <li className="hover:underline hover:underline-offset-8 hover:cursor-pointer">About Us</li>
             </Link>
             <Link to="/home">
               <li onClick={scrolltoOurwork} className="hover:underline hover:underline-offset-8 hover:cursor-pointer">Our Work</li>
